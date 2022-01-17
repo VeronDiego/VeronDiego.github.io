@@ -9,7 +9,6 @@ body {
 .topnav {
     margin: 0;
     padding-bottom: 0.5vw;
-    background-color: rgb(155, 155, 155);
 }
 
 
@@ -19,7 +18,7 @@ body {
     display: block;
     position: relative;
     padding-top: 1%;
-    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -38,7 +37,7 @@ body {
 #burger input {
     display: block;
     width: 40vw;
-    height: 32vw;
+    height: 32px;
     position: absolute;
     top: -7px;
     left: -5px;
@@ -220,7 +219,9 @@ a {
 
 .far fa-calendar-alt,
 .fas fa-mail-bulk,
-.fas fa-phone-square {}
+.fas fa-phone-square {
+    size: 30vw;
+}
 
 
 /*----------------------------------------------- MARCO Derecha -----------------------------------------------------------------*/
