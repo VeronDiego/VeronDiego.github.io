@@ -175,11 +175,27 @@ p {
     font-size: 1.5vw;
 }
 
+.datos p,
+.datos a {
+    font-size: 1.3vw;
+}
+
 ul {
     font-size: 1.5vw;
 }
 
-a {
+li {
+    font-size: 1.2vw;
+}
+
+i {
+    font-size: 1.5vw;
+}
+
+
+/*ver q onda esto y sumarlo al otro*/
+
+.der {
     font-size: 1.5vw;
 }
 
@@ -215,12 +231,6 @@ a {
     border: 40px solid transparent;
     border-image: url(images/Madera.png) 20% stretch;
     border-image-slice: 33% fill; */
-}
-
-.far fa-calendar-alt,
-.fas fa-mail-bulk,
-.fas fa-phone-square {
-    size: 30vw;
 }
 
 
