@@ -97,8 +97,8 @@ body {
     position: absolute;
     right: 20%;
     font-size: 3vw;
-    color: white;
     font-family: "Arial Black", Helvetica, sans-serif;
+    color: white;
 }
 
 #nombre {
@@ -116,46 +116,43 @@ body {
     width: 8vw;
     height: 8vw;
     right: 0%;
-    padding-top: 0%;
-    font-size: 6vw;
-    color: white;
 }
 
 
 /*------------------------------------------GENERALES de TEXTO ---------------------------------------------------------*/
 
-h3 {
+.contenedor h3 {
     text-align: justify;
     text-decoration: underline;
     text-transform: uppercase;
     font-size: 2vw;
 }
 
-p {
+.contenedor p {
     text-align: justify;
     font-size: 1.5vw;
 }
 
-.datos p,
-.datos a {
+.contenedor .datos p,
+.contenedor .datos a {
     font-size: 1.3vw;
 }
 
-.far,
-.fas,
-.fab {
+.contenedor .far,
+.contenedor .fas,
+.contenedor .fab {
     font-size: 1.3vw;
 }
 
-ul {
+.contenedor ul {
     font-size: 1.5vw;
 }
 
-li {
+.contenedor li {
     font-size: 1.2vw;
 }
 
-i {
+.contenedor i {
     font-size: 1.5vw;
 }
 
@@ -172,13 +169,14 @@ i {
 .contenedor {
     margin: 2%;
     box-sizing: border-box;
-    float: left;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
     .body,
     .body2 {
         float: none;
+        width: 100%;
     }
 }
 
@@ -187,6 +185,7 @@ i {
 
 .body {
     float: left;
+    display: block;
     width: 20%;
     margin-left: 0%;
     padding: 3%;
@@ -205,10 +204,10 @@ i {
 /*----------------------------------------------- MARCO Derecha -----------------------------------------------------------------*/
 
 .body2 {
-    float: right;
+    float: left;
     width: 65%;
     margin-left: 1%;
-    padding: 3%;
+    padding: 2%;
     border-radius: 10px 10px;
     background-color: rgb(239, 239, 239);
     box-shadow: 5px 5px rgb(11, 90, 180);
@@ -226,12 +225,12 @@ i {
 
 .izq {
     float: left;
-    width: 65%;
+    width: 60%;
 }
 
 .der {
     float: right;
-    padding: 5%;
+    padding: 2%;
     margin-top: 5%;
     width: auto;
     background-color: grey;
