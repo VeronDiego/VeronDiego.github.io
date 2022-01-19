@@ -29,8 +29,23 @@
     <!-- scrips -->
     <!--fontawesome.com-->
     <script src="https://kit.fontawesome.com/30185bc50d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- style -->
 
+
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.display = "none";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.display = "initial";
+        }
+    </script>
 
 </head>
 
@@ -39,40 +54,23 @@
 
 
 <body>
-    <!--- ------------------------------------------------------------------------------------------>
 
     <!-- -----------------------------------------  Barra nav ---------------------------------------------------------------- -->
-    <!-- href la hacemos con php ?? -->
-    <ul class="topnav">
-        <nav role="navigation">
-            <div id="burger">
+    <div class="navbar">
+        <h1>Inicio</h1>
+        <div id="mySidebar" class="sidebar">
+            <button class="btn" onclick="closeNav()">&#9776;</button>
+            <a href="#">Inicio </a>
+            <a href="#">Historia</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Descargas</a>
+        </div>
 
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
 
-                <ul id="menu">
-                    <a href="CSS_styles.css" target="_blank">
-                        <li>Perfil</li>
-                    </a>
-                    <a href="CSS_styles.css" target="_blank">
-                        <li>Electrónica</li>
-                    </a>
-                    <a href="CSS_styles.css" target="_blank">
-                        <li>Programación</li>
-                    </a>
-                    <a href="CSS_styles.css" target="_blank">
-                        <li>Contacto</li>
-                    </a>
-                    <a href="CSS_styles.css" target="_blank">
-                        <li>Descargas</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-    </ul>
-
+        <div id="main">
+            <button class="btn" onclick="openNav()">&#9776;</button>
+        </div>
+    </div>
     <!-- ------------------------------------------ ENCABEZADO ------------------------------------------------------------------- -->
 
     <div class="foto_Fondo">
