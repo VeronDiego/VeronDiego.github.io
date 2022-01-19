@@ -5,7 +5,7 @@ body {
 
 /*---------------------------------------- BARRA ---------------------------------------------------*/
 
-#main,
+#btnbox,
 .btn {
     position: absolute;
     top: 0;
@@ -13,10 +13,14 @@ body {
     transition: margin-left .5s;
 }
 
+.btnbox {
+    overflow: auto;
+}
+
 .navbar h1 {
     text-align: center;
     color: white;
-    font-size: 21px;
+    font-size: 80%;
     text-transform: uppercase;
 }
 
@@ -54,20 +58,12 @@ body {
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 10px;
     border-radius: 5px 5px;
 }
 
 .btn:hover {
     background-color: #444;
 }
-
-.sidebar .btn:hover {
-    background-color: #444;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
     .sidebar {
