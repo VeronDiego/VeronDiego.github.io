@@ -45,11 +45,9 @@
                 <h3 class="float-md-start mb-0 text-black-50"><b>Perfil Completo</b></h3>
 
                 <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link" href="https://verondiego.github.io/">Inicio</a>
-                    <a class="nav-link active" aria-current="page" href="#">Curriculum</a>
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Certificados</a>
-                    <a class="nav-link" href="esp.html">ESP8266</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" aria-current="page" href="https://verondiego.github.io/">Inicio</a>
+                    <a class="nav-link active" href="Curriculum.html">Curriculum</a>
+                    <a class="nav-link" href="sandb.html">Sand Box</a>
                 </nav>
             </div>
         </header>
@@ -58,26 +56,30 @@
 
 
         <main class="px-6 my-5">
-            <div class="container-fluid">
-                <h1 class="float-lg-start "><b>Mi Curriculum</b></h1>
-                <p class="lead float-RIGHT">
-                    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-black ">Descargar CV</a>
-                </p>
+
+            <div class="row">
+                <h1 class="col"><b>Mi Curriculum</b></h1>
+                <a href="CV Veron Diego A.pdf" target="_blank" class="col-3 btn btn-lg fw-bold text-white border-white bg-black" download>
+                    PDF
+                </a>
             </div>
 
             <div class="container mt-3 min-vh-100 ">
-
                 <div id="accordion">
-
                     <div class="card">
                         <div class="card-header">
-                            <a class="btn" data-bs-toggle="collapse" href="#Educación">
+
+                            <a class="btn float-start" data-bs-toggle="collapse" href="#Educación">
                             Educación
                             </a>
+                            <a class="nav-link float-end" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Certificados</a>
                         </div>
+
 
                         <div id="Educación" class="collapse show" data-bs-parent="#accordion">
                             <div class="card-body">
+
+
                                 <p>En Resistencia Chaco: </p>
 
                                 <ul>
@@ -129,20 +131,19 @@
 
                         <div id="Experiencia" class="collapse" data-bs-parent="#accordion">
                             <div class="card-body">
-                                <p><b> EN DIVERSOS EMPRESAS GASTRONOMICAS</b></p>
-
-                                <ul>
-                                    <li>Charming – Hotel 4 estrellas & spa - Hua Huan 7549, Bariloche </li>
-                                    <li>El Patacón Restaurante - Av. Exequiel Bustillo 7000, Bariloche.</li>
-                                    <li>Cafetería y Confitería HAVANNA – Av. Cabildo 2812, Buenos Aires</li>
-                                </ul>
-
                                 <p><b>FREELANCE</b></p>
 
                                 <ul>
                                     <li>Taller de reparación de electrodomésticos. </li>
                                     <li>Venta de impresiones 3D</li>
                                     <li>Clases particulares de Estructuras básicas de programación.</li>
+                                </ul>
+                                <p><b> EN DIVERSOS EMPRESAS GASTRONOMICAS</b></p>
+
+                                <ul>
+                                    <li>Charming – Hotel 4 estrellas & spa - Hua Huan 7549, Bariloche </li>
+                                    <li>El Patacón Restaurante - Av. Exequiel Bustillo 7000, Bariloche.</li>
+                                    <li>Cafetería y Confitería HAVANNA – Av. Cabildo 2812, Buenos Aires</li>
                                 </ul>
                             </div>
                         </div>
@@ -155,10 +156,31 @@
         </main>
 
 
+        <!-- ------------------------------------------Footer-------------------------------------------   -->
 
-        <footer class="mt-auto text-white-50">
-            <p>Podes encontrarme en <a href="https://www.linkedin.com/in/diego-veron-5a3041200/" class="text-white">LinkedIn</a>.</p>
+
+        <footer class="container-fluid d-flex justify-content-sm-center mt-auto">
+
+            <div class="row">
+                <div class="col-sm-3 p-3 display-6">
+                    <a href="tel:+4733378901">
+                        <i class="fas fa-phone-square"></i>
+                    </a>
+                </div>
+                <div class="col-sm-3 p-3 display-6">
+                    <a href="mailto:misaponia@gmail.com">
+                        <i class="fas fa-mail-bulk">  </i>
+                    </a>
+                </div>
+                <div class="col-sm-3 p-3 display-6">
+                    <a href="https://www.linkedin.com/in/diego-veron-5a3041200/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
         </footer>
+
+
     </div>
 
     <!-- ------------------------------------------ Certificados -------------------------------------------   -->
@@ -218,6 +240,5 @@
             </div>
         </div>
     </div>
-
 
 </body>
