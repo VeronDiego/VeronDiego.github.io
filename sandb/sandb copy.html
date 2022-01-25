@@ -4,11 +4,10 @@
 <head>
     <!-- Title -->
     <title>Veron Diego</title>
-    <link rel="Icono" type="image/x-icon" href="">
-    <!-- Tengo que agregar un icono -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!--Stylesheet-->
-    <link href="css.css" rel="stylesheet">
+    <link href="../css.css" rel="stylesheet">
 
     <!--Meta-->
     <meta charset="UTF-8 ">
@@ -18,8 +17,6 @@
     <meta name="sitio" property="og:site_name" content="Veron Diego Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--<meta http-equiv="refresh" content="91 ">-->
-
-
 
 
     <!--fontawesome.com-->
@@ -39,6 +36,43 @@
 
 <body>
 
+    <!------------------------------------------------------------------------>
+
+    <div class="container mt-3">
+        <h2>Toggleable Tabs</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------------>
     <div class="cover-container d-flex flex-column w-100 h-100 p-3 mx-auto ">
         <header class="mb-auto">
             <div>
@@ -46,7 +80,7 @@
 
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     <a class="nav-link" aria-current="page" href="https://verondiego.github.io/">Inicio</a>
-                    <a class="nav-link" href="Curriculum.html">Curriculum</a>
+                    <a class="nav-link" href="../curriculum/curriculum.html">Curriculum</a>
                     <a class="nav-link active" href="sandb.html">SandBox</a>
                 </nav>
             </div>
