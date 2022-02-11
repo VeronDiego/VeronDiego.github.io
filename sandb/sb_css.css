@@ -1,0 +1,6 @@
+#borde {
+    border: 40px solid;
+    border-image: url(../images/border/Basic.png) 20% stretch;
+    border-image-slice: 33% fill;
+    */
+}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -8,6 +9,7 @@
 
     <!--Stylesheet-->
     <link href="../css.css" rel="stylesheet">
+    <link href="sb_css.css" rel="stylesheet">
 
 
     <!--Meta-->
@@ -30,6 +32,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!--script-->
+    <script src="sb_js.js"></script>
 
 </head>
 
@@ -76,24 +80,28 @@
                 <h3>Blog</h3>
                 <p>Espacio para noticias y actualizaciones de los diferentes trabajos realizados.</p>
                 <hr>
-
-
-
+                <!-- El sitio en construccion hecho con JS-->
+                <script>
+                    escribir()
+                </script>
+                <div id="averga"></div>
 
 
                 <div class="container-fluid mt-5 border-2">
                     <div class="card">
                         <div class="card-body p-0">
-                            <img src="../images/otros/web-en-construcción.jpg" class="img-thumbnail float-start" alt="foto" width="304" height="236">
-
-                            <h4 class="card-title">Trabajando para mejorar.</h4>
-                            <p class="small">Martes 25/01/22</p>
-                            <p class="card-text">En la tarea de brindad mejor control sobre la visualizacion del contenido y nuevas herramientas para la nevegación en la web.</p>
-
+                            <img src="../images/otros/matrix.png" class="img-thumbnail float-start" alt="foto" width="304" height="236">
+                            
+                            <h4 class="card-title">Matrix.</h4>
+                            <p class="small">Martes 11/02/22</p>
+                            <p class="card-text">Un divertido fondo en homenaje a Matrix escrito con java script en un canvas un codigo escrito por Ganesh Prasad para estudiantes.</p>
+                            
+                            <button type="button" class="btn btn-dark btn-lg float-end" data-bs-toggle="modal" data-bs-target="#myModal">Matrix</button>
                         </div>
                     </div>
-
                 </div>
+
+
 
 
                 <div class="container-fluid mt-5">
@@ -122,16 +130,36 @@
 
                         </div>
                     </div>
-                    <br><br><br><br>
-
                 </div>
+
+
+                <div class="container-fluid mt-5">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img src="../images/otros/Ciudad 2.jpg" class="img-thumbnail float-start" alt="foto" width="304" height="236">
+
+                            <h4 class="card-title">Hora al clickEvent</h4>
+                            <p class="small">Martes 10/01/22</p>
+                            <p class="card-text" id="fecha"></p>
+                            <button type="button" class="float-end btn btn-dark" onclick="document.getElementById('fecha').innerHTML = Date()">
+                                fecha y hora.</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <br><br><br><br>
+
 
 
             </div>
 
             <!------------------------------------------ ESP --------------------------------------------- -->
 
-            <div id="esp" class="container tab-pane fade"><br>
+            <div id="esp " class="container tab-pane fade "><br>
                 <h3>ESP-8266</h3>
                 <p>Este espacio esta destinado para la interacción con distintos proyectos realizados con el ESP-8266 para el IOT.</p>
                 <hr>
@@ -141,42 +169,51 @@
 
             <!------------------------------------------ Dashboard ---------------------------------------- -->
 
-            <div id="dashboard" class="container tab-pane fade"><br>
+            <div id="dashboard " class="container tab-pane fade "><br>
                 <h3>Dashboard</h3>
                 <p>Analizaremos los datos que iremos recopilando y almacenando en una base de datos .</p>
                 <hr>
                 <!------------------------------------------ Dashboard  contenido -------------------------- -->
 
-                <div class="container-fluid">
-                    <main class="ms-sm-auto  px-md-4">
-                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                            <h1 class="h2">Dashboard</h1>
-                            <div class="btn-toolbar mb-2 mb-md-0">
-                                <div class="btn-group me-2">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Compartir</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+                <div class="container-fluid ">
+                    <main class="ms-sm-auto px-md-4 ">
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom ">
+                            <h1 class="h2 ">Dashboard</h1>
+                            <div class="btn-toolbar mb-2 mb-md-0 ">
+                                <div class="btn-group me-2 ">
+                                    <button type="button " class="btn btn-sm btn-outline-secondary ">Compartir</button>
+                                    <button type="button " class="btn btn-sm btn-outline-secondary ">Exportar</button>
                                 </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                                    <span data-feather="calendar"></span>
+                                <button type="button " class="btn btn-sm btn-outline-secondary dropdown-toggle ">
+                                    <span data-feather="calendar "></span>
                                     Semanal
                                     </button>
                             </div>
                         </div>
 
-                        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-                        <h2>Datos Crudos</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Valor</th>
-                                        <th scope="col">Dato 1</th>
-                                        <th scope="col">Dato 2</th>
-                                        <th scope="col">Dato 3</th>
-                                        <th scope="col">Dato 4</th>
-                                    </tr>
-                                </thead>
+                        <canvas class="my-4 w-100 " id="myChart " width="900 " height="380 "></canvas>
+
+                        <h1>List of Employees</h1>
+                        <ul>
+
+
+                            <h2>Datos Crudos</h2>
+                            <div class="table-responsive ">
+                                <table class="table table-striped table-sm ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col ">Valor</th>
+                                            <th scope="col ">Dato 1</th>
+                                            <th scope="col ">Dato 2</th>
+                                            <th scope="col ">Dato 3</th>
+                                            <th scope="col ">Dato 4</th>
+                                        </tr>
+                                    </thead>
+
+                                    <?php
+
+
                                 <tbody>
                                     <tr>
                                         <td>1,001</td>
@@ -297,11 +334,11 @@
                 </div>
 
 
-                <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="../assets/dist/js/bootstrap.bundle.min.js "></script>
 
-                <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
-                <script src="dashboard.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js " integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE " crossorigin="anonymous "></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js " integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha " crossorigin="anonymous "></script>
+                <script src="dashboard.js "></script>
 
 
             </div>
@@ -314,7 +351,71 @@
     </div>
     <!-- ------------------------------------------Fin de Navbar-------------------------------------------   -->
 
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog ">
+        <div class="modal-content">
 
+            <!-- Modal body -->
+            <div class="modal-body">
+
+                <canvas id="canv" class="w-100 h-100 "></canvas>
+
+                <script>
+                    // Get the canvas node and the drawing context
+                    const canvas = document.getElementById('canv');
+                    const ctx = canvas.getContext('2d');
+
+                    // set the width and height of the canvas
+                    const w = canvas.width = document.body.offsetWidth;
+                    const h = canvas.height = document.body.offsetHeight;
+
+                    // draw a black rectangle of width and height same as that of the canvas
+                    ctx.fillStyle = '#000';
+                    ctx.fillRect(0, 0, w, h);
+
+
+                    //  We want to make the text fall in columns. Each column will be 20px wide. 
+                    //  And in each frame of the animation, we will put a single character at the end of each column. 
+                    //  Initially the end (y coordinate) of each column is at 0.
+                    const cols = Math.floor(w / 20) + 1;
+                    const ypos = Array(cols).fill(0);
+
+                    function matrix () {
+                        // Draw a semitransparent black rectangle on top of previous drawing
+                        ctx.fillStyle = '#0001';
+                        ctx.fillRect(0, 0, w, h);
+
+                        // Set color to green and font to 15pt monospace in the drawing context
+                        ctx.fillStyle = '#0f0';
+                        ctx.font = '15pt monospace';
+
+                        // for each column put a random character at the end
+                         
+                        ypos.forEach((y, ind) => {
+                            // generate a random character
+                            const text = String.fromCharCode(Math.random() * 128);
+
+                            // x coordinate of the column, y coordinate is already given
+                            const x = ind * 20;
+                            // render the character at (x, y)
+                            ctx.fillText(text, x, y);
+
+                            // randomly reset the end of the column if it's at least 100px high
+                            if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
+                            // otherwise just move the y coordinate for the column 20px down,
+                            else ypos[ind] = y + 20;
+                        });
+                    }
+
+                    // render the animation at 20 FPS.
+                    setInterval(matrix, 50);
+                </script>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
